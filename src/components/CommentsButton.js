@@ -4,7 +4,8 @@ function CommentsButton({commentsButton, handleCommentsButton}) {
 
   return (
     <div className="App">
-      <button onClick={handleCommentsButton}>{commentsButton}</button>
+      <button onClick={handleCommentsButton}>{commentsButton}</button>  <br></br>
+      <br></br>
     </div>
   );
 }

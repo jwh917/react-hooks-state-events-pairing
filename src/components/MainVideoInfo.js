@@ -1,6 +1,6 @@
 import React from "react";
 
-function MainInfo({mainInfoForVideo}) {
+function MainVideoInfo({mainInfoForVideo}) {
 
   return (
     <div className="App">
@@ -10,4 +10,4 @@ function MainInfo({mainInfoForVideo}) {
   );
 }
 
-export default MainInfo;
+export default MainVideoInfo;

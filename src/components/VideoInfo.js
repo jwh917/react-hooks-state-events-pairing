@@ -1,8 +1,8 @@
 import React from "react";
-import MainInfo from "./MainInfo.js";
+import MainVideoInfo from "./MainVideoInfo.js";
 import UpDownVoteButtons from "./UpDownVoteButtons.js";
-import CommentsButton from "./CommentsButton.js";
 import CommentsList from "./CommentsList.js";
+
 
 function VideoInfo({
   mainInfoForVideo, 
@@ -15,12 +15,12 @@ function VideoInfo({
   commentsForVideo
 }) {
 
+
   return (
     <div className="App">
-      <MainInfo mainInfoForVideo={mainInfoForVideo}/>
+      <MainVideoInfo mainInfoForVideo={mainInfoForVideo}/>
       <UpDownVoteButtons upvoteButton={upvoteButton} downvoteButton={downvoteButton} handleUpvoteButton={handleUpvoteButton} handleDownvoteButton={handleDownvoteButton}/>
-      <CommentsButton commentsButton={commentsButton} handleCommentsButton={handleCommentsButton}/>
-      <CommentsList commentsForVideo={commentsForVideo} commentsButton={commentsButton}/>
+      <CommentsList commentsForVideo={commentsForVideo} commentsButton={commentsButton} handleCommentsButton={handleCommentsButton}/>
     </div>
   );
 }
